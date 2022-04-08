@@ -1,8 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ['@svgr/webpack'],
+    });
+    return config;
+  },
   images: {
-    domains: ['content.linkedin.com', 'static-exp1.licdn.com', 'rb.gy'],
+    domains: ['rb.gy'],
   },
 };
 
