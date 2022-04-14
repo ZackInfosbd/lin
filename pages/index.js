@@ -6,6 +6,7 @@ import GroupIcon from '@mui/icons-material/Group';
 import OndemandVideoSharp from '@mui/icons-material/OndemandVideoSharp';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+// import Asset from '../public/asset01.svg';
 
 export default function Home() {
   return (
@@ -17,14 +18,7 @@ export default function Home() {
       </Head>
 
       <header className="flex justify-around items-center py-4">
-        <div className="relative w-36  h-10">
-          <Image
-            src="https://rb.gy/vtbzlp"
-            layout="fill"
-            objectFit="contain"
-            alt="linked-in"
-          />
-        </div>
+        <div className="relative w-36  h-10"></div>
         <div className="flex items-center sm:divide-x divide-gray-300">
           <div className="hidden sm:flex space-x-8 pr-4">
             <HeaderLink Icon={ExploreIcon} text="Discover" />
@@ -60,14 +54,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative xl:absolute h-80 w-80 xl:w-[650px] top-14 right-5">
-          <Image
-            src="https://rb.gy/vkzpzt"
-            alt="image"
-            layout="fill"
-            priority
-          />
-        </div>
+        <div className="relative xl:absolute h-80 w-80 xl:w-[650px] top-14 right-5"></div>
       </main>
     </div>
   );
