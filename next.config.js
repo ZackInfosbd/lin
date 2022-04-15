@@ -1,21 +1,9 @@
 /** @type {import('next').NextConfig} */
 
-const nextConfig = {
-  reactStrictMode: true,
-  webpack: (config) => {
-    config.module.rules.push({
-      test: /\.svg$/,
-      use: [
-        {
-          loader: '@svgr/webpack',
-          options: {
-            native: true,
-          },
-        },
-      ],
-    });
-    return config;
+module.exports = {
+  images: {
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    domains: ['rb.gy'],
   },
 };
-
-module.exports = nextConfig;
